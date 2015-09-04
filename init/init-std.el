@@ -14,6 +14,8 @@
 
 
 
+(add-to-list 'load-path "~/.emacs.d/setup/")
+
 ;; Custom key bindings
 (global-set-key (kbd "M-g")     'goto-line)        ;; better keybinding for goto-line
 (global-set-key (kbd "C-c q")   'join-line)        ;; join this line and the previous one
