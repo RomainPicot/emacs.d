@@ -1,3 +1,10 @@
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (add-to-list
+   'package-archives
+   '("melpa" . "http://melpa.org/packages/")
+   t)
+  (package-initialize))
 
 ;; Global customization
 (setq
@@ -259,6 +266,9 @@ turned on."
 
 (add-to-list 'load-path "~/.emacs.d/packages/latex-perso")
 (load-library "latex-perso")
+
+(add-to-list 'load-path "~/.emacs.d/packages/timeStamp")
+(load-library "timeStamp")
 
 (add-to-list 'load-path "~/.emacs.d/packages/hide-comnt")
 (require 'hide-comnt)

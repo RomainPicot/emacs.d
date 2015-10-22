@@ -8,5 +8,5 @@
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (add-hook 'LaTeX-mode-hook 'turn-on-TeX-PDF-mode)
 
-(add-hook 'latex-mode-hook 'flyspell-mode)
+;; (add-hook 'latex-mode-hook 'flyspell-mode)
 (add-hook 'latex-mode-hook 'auto-fill-mode)
