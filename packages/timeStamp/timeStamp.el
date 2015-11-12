@@ -9,5 +9,7 @@ See also `current-date-time-string'."
   (interactive "P")
   (when (use-region-p) (delete-region (region-beginning) (region-end) ) )
   (cond
-   ((equal addTimeStamp-p nil ) (insert (format-time-string "%Y-%m-%d")))
+   ((equal addTimeStamp-p nil ) (insert (format-time-string "%Y-%m-%d-%R")))
    (t (insert (current-date-time-string))) ) )
+
+(global-set-key (kbd "s-i")  'insert-date) ;; insert time stamp shortcut
